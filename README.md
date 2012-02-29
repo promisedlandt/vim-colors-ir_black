@@ -9,6 +9,7 @@ I've been using this excellent color scheme for a few years, but now I'm startin
 ## Installation
 
 In your vimrc, add
+
 ```
 set background=dark
 syntax enable " syntax highlighting
