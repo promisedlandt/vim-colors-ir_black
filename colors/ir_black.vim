@@ -73,8 +73,8 @@ hi Cursor           guifg=black       guibg=white       gui=NONE      ctermfg=bl
 hi LineNr           guifg=#3D3D3D     guibg=black       gui=NONE      ctermfg=darkgray    ctermbg=NONE        cterm=NONE
 
 hi VertSplit        guifg=#ffffff     guibg=#202020     gui=NONE      ctermfg=darkgray    ctermbg=darkgray    cterm=NONE
-hi StatusLine       guifg=#f6f3e8     guibg=#202020     gui=NONE    ctermfg=white       ctermbg=darkgray    cterm=NONE
-hi StatusLineNC     guifg=#a6a6a6     guibg=#202020     gui=NONE      ctermfg=lightgray        ctermbg=darkgray    cterm=NONE
+hi StatusLine       guifg=#f6f3e8     guibg=#202020     gui=NONE      ctermfg=white       ctermbg=darkgray    cterm=NONE
+hi StatusLineNC     guifg=#a6a6a6     guibg=#202020     gui=NONE      ctermfg=lightgray   ctermbg=darkgray    cterm=NONE
 
 hi Folded           guifg=#a0a8b0     guibg=#384048     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
 hi Title            guifg=#f6f3e8     guibg=NONE        gui=bold      ctermfg=NONE        ctermbg=NONE        cterm=NONE
@@ -84,22 +84,25 @@ hi SpecialKey       guifg=#808080     guibg=#343434     gui=NONE      ctermfg=NO
 
 hi WildMenu         guifg=green       guibg=yellow      gui=NONE      ctermfg=black       ctermbg=yellow      cterm=NONE
 hi PmenuSbar        guifg=black       guibg=white       gui=NONE      ctermfg=black       ctermbg=white       cterm=NONE
-"hi Ignore           guifg=gray        guibg=black       gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
-hi SignColumn          guifg=#070707     guibg=black       gui=NONE      ctermfg=black       ctermbg=NONE        cterm=NONE
+"hi Ignore          guifg=gray        guibg=black       gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
+hi SignColumn       guifg=#070707     guibg=black       gui=NONE      ctermfg=black       ctermbg=NONE        cterm=NONE
 
 hi Error            guifg=NONE        guibg=NONE        gui=undercurl ctermfg=white       ctermbg=red         cterm=NONE     guisp=#FF6C60 " undercurl color
 hi ErrorMsg         guifg=white       guibg=#FF6C60     gui=BOLD      ctermfg=white       ctermbg=red         cterm=NONE
 hi WarningMsg       guifg=white       guibg=#FF6C60     gui=BOLD      ctermfg=white       ctermbg=red         cterm=NONE
+hi SpellCap         guifg=NONE        guibg=#555753     gui=NONE      ctermfg=NONE        ctermbg=darkgray    cterm=NONE
+
 
 " Message displayed in lower left, such as --INSERT--
 hi ModeMsg          guifg=black       guibg=#C6C5FE     gui=BOLD      ctermfg=black       ctermbg=cyan        cterm=BOLD
 
 if version >= 700 " Vim 7.x specific colors
   hi CursorLine     guifg=NONE        guibg=#121212     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=BOLD
+  hi CursorLineNR   guifg=yellow      guibg=#121212     gui=BOLD      ctermfg=yellow      ctermbg=NONE        cterm=BOLD
   hi CursorColumn   guifg=NONE        guibg=#121212     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=BOLD
   hi MatchParen     guifg=#f6f3e8     guibg=#857b6f     gui=BOLD      ctermfg=white       ctermbg=darkgray    cterm=NONE
-  hi Pmenu          guifg=#f6f3e8     guibg=#444444     gui=NONE      ctermfg=white        ctermbg=darkgray        cterm=NONE
-  hi PmenuSel       guifg=#000000     guibg=#cae682     gui=NONE      ctermfg=black        ctermbg=lightgreen        cterm=NONE
+  hi Pmenu          guifg=#f6f3e8     guibg=#444444     gui=NONE      ctermfg=white       ctermbg=darkgray    cterm=NONE
+  hi PmenuSel       guifg=#000000     guibg=#cae682     gui=NONE      ctermfg=black       ctermbg=lightgreen  cterm=NONE
   hi Search         guifg=NONE        guibg=NONE        gui=underline ctermfg=NONE        ctermbg=NONE        cterm=underline
 endif
 
@@ -203,12 +206,5 @@ hi link htmlEndTag      Identifier
 hi link javaScriptNumber      Number
 
 
-" Special for Python
-"hi  link pythonEscape         Keyword
-
-
 " Special for CSharp
 hi  link csXmlTag             Keyword
-
-
-" Special for PHP
